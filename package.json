@@ -2,10 +2,10 @@
   "name": "dataverse-error-codes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scrape": "node ./src/index.js"
+    "scrape": "node ./src/scrape.js"
   },
   "keywords": [],
   "author": "",

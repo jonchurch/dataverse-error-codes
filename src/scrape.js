@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 
 const cheerio = require("cheerio");
 const fetch = (...args) =>
@@ -49,5 +50,8 @@ const URL =
 
   const final = { all: results, byName, byCode };
 
-  fs.writeFileSync("dist/codes.json", JSON.stringify(final, null, 2));
+  fs.writeFileSync(
+    path.join(__dirname, "codes.json"),
+    JSON.stringify(final, null, 2)
+  );
 })();
