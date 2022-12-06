@@ -48,5 +48,6 @@ const URL =
   }, {});
 
   const final = { all: results, byName, byCode };
-  fs.writeFileSync("dir/codes.json", JSON.stringify(final, null, 2));
+
+  fs.writeFileSync("dist/codes.json", JSON.stringify(final, null, 2));
 })();
