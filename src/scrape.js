@@ -39,19 +39,13 @@ const URL =
     results.push({ code, name, msg });
   });
 
-  const byName = results.reduce((p, cur, i) => {
-    p[cur.name] = cur;
-    return p;
-  }, {});
   const byCode = results.reduce((p, cur, i) => {
-    p[cur.code] = cur;
+    p[cur.code] = {name: cur.name, message: cur.msg}
     return p;
   }, {});
-
-  const final = { all: results, byName, byCode };
 
   fs.writeFileSync(
-    path.join(__dirname, "codes.json"),
-    JSON.stringify(final, null, 2)
+    path.join(__dirname, "errorCodes.json"),
+    JSON.stringify(byCode)
   );
 })();
