@@ -11168,7 +11168,7 @@
     {
       "code": "0x8004F065",
       "name": "LayerDesiredOrderNotWhitelist",
-      "msg": "The LayerDesiredOrder parameter is present in the import request of [{0}], but this solution is not allowed to use it. Solutions must be whitelisted to use this feature."
+      "msg": "The LayerDesiredOrder parameter is present in the import request of [{0}], but this solution is not allowed to use it. Solutions must be allow listed to use this feature."
     },
     {
       "code": "0x8004F047",
@@ -31465,7 +31465,7 @@
     "LayerDesiredOrderNotWhitelist": {
       "code": "0x8004F065",
       "name": "LayerDesiredOrderNotWhitelist",
-      "msg": "The LayerDesiredOrder parameter is present in the import request of [{0}], but this solution is not allowed to use it. Solutions must be whitelisted to use this feature."
+      "msg": "The LayerDesiredOrder parameter is present in the import request of [{0}], but this solution is not allowed to use it. Solutions must be allow listed to use this feature."
     },
     "LayerDesiredOrderPendingUpgrade": {
       "code": "0x8004F047",
@@ -51762,7 +51762,7 @@
     "0x8004F065": {
       "code": "0x8004F065",
       "name": "LayerDesiredOrderNotWhitelist",
-      "msg": "The LayerDesiredOrder parameter is present in the import request of [{0}], but this solution is not allowed to use it. Solutions must be whitelisted to use this feature."
+      "msg": "The LayerDesiredOrder parameter is present in the import request of [{0}], but this solution is not allowed to use it. Solutions must be allow listed to use this feature."
     },
     "0x8004F047": {
       "code": "0x8004F047",
