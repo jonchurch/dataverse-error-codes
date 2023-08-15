@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scrape": "node ./src/scrape.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["dataverse", "error codes", "power platform"],
+  "author": "jonchurch",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
