@@ -10,9 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "cheerio": "^1.0.0-rc.12",
     "node-fetch": "^3.3.0"
-  },
-  "devDependencies": {}
+  }
 }
