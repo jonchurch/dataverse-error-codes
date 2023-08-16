@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scrape": "node ./src/scrape.js"
+    "scrape": "node ./scripts/scrape.js"
   },
   "keywords": [
     "dataverse",

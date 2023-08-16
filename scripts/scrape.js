@@ -1,6 +1,9 @@
 import fs from "fs";
 import path from "path";
-import fetch from "fetch"
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 import * as cheerio from "cheerio";
 
@@ -43,17 +46,8 @@ const URL =
     return acc;
   }, {});
 
-  const flat = results.reduce((acc, cur) => {
-    acc[cur.code] = cur.name
-    return acc
-  }, {})
-
   fs.writeFileSync(
-    path.join(__dirname, "errorCodes.json"),
+    path.join(__dirname, "../src/data/errorCodes.json"),
     JSON.stringify(byCode, null, 2)
   );
-  fs.writeFileSync(
-    path.join(__dirname, "flat.json"),
-    JSON.stringify(flat, null, 2)
-  )
 })();
