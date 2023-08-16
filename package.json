@@ -5,12 +5,18 @@
   "type": "module",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scrape": "node ./scripts/scrape.js",
     "build:esm": "babel src src/index.js --out-file dist/esm/index.js",
     "build:cjs": "cross-env BABEL_ENV=cjs babel src/index.js --out-file dist/cjs/index.js",
     "build": "npm run build:esm && npm run build:cjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [
     "dataverse",
