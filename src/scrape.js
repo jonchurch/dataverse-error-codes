@@ -39,13 +39,22 @@ const URL =
     results.push({ code, name, msg });
   });
 
-  const byCode = results.reduce((p, cur, i) => {
-    p[cur.code] = {name: cur.name, message: cur.msg}
-    return p;
+  const byCode = results.reduce((acc, cur) => {
+    acc[cur.code] = {name: cur.name, message: cur.msg}
+    return acc;
   }, {});
+
+  const flat = results.reduce((acc, cur) => {
+    acc[cur.code] = cur.name
+    return acc
+  }, {})
 
   fs.writeFileSync(
     path.join(__dirname, "errorCodes.json"),
-    JSON.stringify(byCode)
+    JSON.stringify(byCode, null, 2)
   );
+  fs.writeFileSync(
+    path.join(__dirname, "flat.json"),
+    JSON.stringify(flat, null, 2)
+  )
 })();
