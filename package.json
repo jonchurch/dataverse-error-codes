@@ -7,12 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scrape": "node ./src/scrape.js"
   },
-  "keywords": ["dataverse", "error codes", "power platform"],
+  "keywords": [
+    "dataverse",
+    "error codes",
+    "power platform"
+  ],
   "author": "jonchurch",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
     "cheerio": "^1.0.0-rc.12",
+    "cross-env": "^7.0.3",
     "node-fetch": "^3.3.0"
   }
 }
